@@ -1,0 +1,371 @@
+<!DOCTYPE>
+
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		
+		<style>
+		
+			div.card-holder {
+				width : 90%;
+				margin : 20px;
+				padding : 20px;
+				box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+			
+			div.card {
+				
+				text-align : center;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				margin-top:15px; 
+				margin-left: 15px;
+				margin-right : 15px; 
+				margin-left : 15px;
+				
+			}
+		
+			div.header {
+				background-color: #4CAF50;
+				color: white;
+				padding: 20px;
+				font-size: 5px;
+				
+			}
+			
+			div.description {
+				padding : 40px;
+				
+			}
+			
+			table {
+				border-collapse : collapse;
+				width : 100%;
+			}
+			
+			th, td {
+				text-align : left;
+				padding : 8px;
+				border-bottom: 1px solid #ddd;
+
+			}
+			
+			tr : nth-child(even){
+				background-color : #f2f2f;
+			}
+			
+			th {
+				background-color : rgba(255, 0, 0, 0.4);
+				color : white;
+			}
+		</style>
+		
+	</head>
+	
+	
+	
+	<body>
+	
+		<div class="container">
+			
+			
+			<div class="card-holder">
+				<div>
+					<h3>Select type of Surgery</h3>
+				</div>
+			
+				<div class ="card">
+					
+					<div class="header">
+						<a href="#"><h4>Minor Surgery</h4></a>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>Continue warfarin and adjust dose to achieve INR target of 2.0</p>
+						<p>(Unless regional anaesthesia contemplated where a target of 1.5 may be appropriate</p>
+					</div>
+				
+				
+				</div>
+				
+				<div class ="card">
+					
+					<div class="header">
+						<a href ="#warfarin-indication"><h4>Major Surgery</h4></a>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>Stop warfarin 5 days before operation and then consider risk/benefit profile(as below)</p>
+						<p>Surgery can be commenced if INR<= 1.5 on the day of surgery. </p>
+					</div>
+				
+				
+				</div>
+				
+			</div>
+		
+		
+			<div class="card-holder" id = "warfarin-indication">
+				<div>
+					<h3>Major Surgery</h3>
+					<h5>Select the indication for Warfarin therapy</h5>
+				</div>
+			
+				<div class ="card">
+					
+					<div class="header">
+						<h4>VTE</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>If.... </p>
+						<p>VTE within previous 3 months</p>
+						<p>Very high risk patients with a previous VTE whilst on therapeutic anticoagulation who now have a target INR of 3.5</p>
+						<p>Then <span><a href="#treatment1">High Risk</a></span> for VTE</p>
+						<p>Bridging therapy 1 preoperatively and Regime 1 post-operatively</p>
+					</div>
+				
+				
+				</div>
+				
+				<div class ="card">
+					
+					<div class="header">
+						<h4>Atrial Fibrillation</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>If.....</p>
+						<p>Patients with a previous stroke or TIA in last 3 months</p>
+						<p>Patients with a previous stroke or TIA and three or more of the following risk factor : </p>
+						<p> CCF, HYPERTENSION, AGE > 75 , DIABETES MELLITUS </p>
+						<p>Then <span><a href="#treatment1">High Risk</a></span> for VTE</p>
+						<p>Bridging therapy 1 preoperatively and Regime 1 post-operatively</p>
+					</div>
+				
+				
+				</div>
+				
+				<div class ="card">
+					
+					<div class="header">
+						<h4>Mechanical Heart Valves</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>If...</p>
+						<p>MHV patients other than those with a bileaflet aortic valve and no other risk factors</p>
+						<p>Then <span><a href="#treatment2">High Risk</a></span> for VTE</p>
+						<p>Bridging therapy 2 preoperatively and Regime 2 post-operatively</p>
+						
+					</div>
+				
+				
+				</div>
+			</div>
+			
+			<div class="card-holder" id="treatment1">
+				<div>
+					<h3>Bridging therapy 1</h3>
+				</div>
+			
+				<div class ="card">
+					
+					<div class="header">
+						<h4>Pre operative Bridging Therapy 1</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<div class="table">
+							<table>
+								<tr>
+									<th>DAY</th>
+									<th>Warfarin</th>
+									<th>LMWH</th>
+								</tr>
+								<tr>
+									<td>Day6</td>
+									<td>Take usual dose of warfarin</td>
+									<td> </td>
+								</tr>
+								
+								<tr>
+									<td>Day 5</td>
+									<td>Stop Warfarin</td>
+									<td>  </td>
+								</tr>
+								<tr>
+									<td>Day 4</td>
+									<td>Stop Warfarin</td>
+									<td>  </td>
+								</tr>
+								<tr>
+									<td>Day 3</td>
+									<td>Stop Warfarin</td>
+									<td>Give LMWH (1.5mg/kg OD)</td>
+								</tr>
+								<tr>
+									<td>Day 2</td>
+									<td>Stop Warfarin</td>
+									<td>Give LMWH (1.5mg/kg OD)</td>
+								</tr>
+								<tr>
+									<td>Day 1</td>
+									<td>Stop Warfarin</td>
+									<td>Give LMWH (40mg OD)</td>
+								</tr>
+								
+								<tr>
+									<td>Day of surgery</td>
+									<td>Check INR</td>
+									<td>Follow Regime 1</td>
+								</tr>
+								
+							
+							</table>
+						</div>
+					</div>
+				
+				
+				</div>
+				
+				<div class ="card">
+					
+					<div class="header">
+						<h4>Post operative Regime 1</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>Wait 6 hours post-op</p>
+						<p>Check with surgeon for risk of bleeding</p>
+						<p>Commence therapeutic dose of Enoxaparin 1.5mg/kg s/c OD </p>
+						<p>But If patient had epidural OR high risk of surgical bleeding...</p>
+						<p>Then prophylactic dose of Enoxaparin 40mg</p>
+						<p>restart warfarin once patient can take orally</p>	
+					</div>
+				
+				
+				</div>
+				
+			</div>
+			
+			<div class="card-holder" id = "treatment2">
+				<div>
+					<h3>Bridging therapy 2</h3>
+				</div>
+			
+				<div class ="card">
+					
+					<div class="header">
+						<h4>Pre-operative Bridging Therapy 2</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<div class="table">
+							<table>
+								<tr>
+									<th>DAY</th>
+									<th>Warfarin</th>
+									<th>LMWH</th>
+								</tr>
+								<tr>
+									<td>Day6</td>
+									<td>Take usual dose of warfarin</td>
+									<td> </td>
+								</tr>
+								
+								<tr>
+									<td>Day 5</td>
+									<td>Stop Warfarin</td>
+									<td>  </td>
+								</tr>
+								<tr>
+									<td>Day 4</td>
+									<td>Stop Warfarin</td>
+									<td>  </td>
+								</tr>
+								<tr>
+									<td>Day 3</td>
+									<td>Stop Warfarin</td>
+									<td>Give LMWH (1 mg/kg BD)</td>
+								</tr>
+								<tr>
+									<td>Day 2</td>
+									<td>Stop Warfarin</td>
+									<td>Give LMWH (1 mg/kg OD)</td>
+								</tr>
+								<tr>
+									<td>Day 1</td>
+									<td>Stop Warfarin</td>
+									<td>Give LMWH (40mg OD)</td>
+								</tr>
+								
+								<tr>
+									<td>Day of surgery</td>
+									<td>Check INR</td>
+									<td>Follow Regime 2</td>
+								</tr>
+								
+							
+							</table>
+						</div>
+					</div>
+				
+				
+				</div>
+				
+				<div class ="card">
+					
+					<div class="header">
+						<h4>Post operative Regime 2</h4>
+						
+					</div>
+					
+					
+					<div class="description">
+						<p>Wait 6 hours post-op</p>
+						<p>Check with surgeon for risk of bleeding</p>
+						<p>Commence therapeutic dose of Enoxaparin 1 mg/kg s/c BD</p>
+						<p>But If patient had epidural OR high risk of surgical bleeding...</p>
+						<p>Then prophylactic dose of Enoxaparin 40mg</p>
+						<p>restart warfarin once patient can take orally</p>
+					</div>
+				
+				
+				</div>
+				
+			</div>
+		
+		
+		
+		
+		
+		</div>
+	</body>
+
+
+
+
+
+
+</html>
